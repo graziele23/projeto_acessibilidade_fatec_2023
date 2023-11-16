@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 2.2rem;
+	color: #222;
+	text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: plum;
+}
+
+.circulo{
+    width: 10rem;
+    height: 5rem;
+    margin-bottom: -3rem;
+    margin-left: 50rem;
+}
+
+.img_estrela{
+    display: flex;
+    width: 6rem;
+    height: 5rem;
+    margin-top: -5rem;
+    margin-left: 10rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	background: rgb(219, 159, 219);
+    height: 5rem;
+}
+
+.img_espiral{
+	display: flex;
+	margin-top: -21rem;
+}
+
+.minha_foto{
+	display: flex;
+	margin-top: -35.4rem;
+	width: 26rem;
+	height: 35rem;
+}
+
+.h10{
+	display: block;
+	margin-left: 50rem;
+	text-align: justify;
+	padding-top: 5rem;
+}
+
+span{
+color: #DDE0E7;
+}
+
+.p1{
+	margin-left: 50rem;
+	margin-right: 10rem;
+	margin-top: 1rem;
+}
+
+.img_pdf{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+.div_header{
+    background-color:rgb(219, 159, 219) ;
+    height: 30rem;
+}
+nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+nav ul {
+	list-style: none;
+    margin-top: 2rem;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+    margin: -1rem;
+ 
+}
+
+nav ul li a {
+	display: block;
+	color: rgba(255, 255, 255, .9);
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transition: all .3s ease-in-out;
+    font-size: 0.8rem;
+    text-decoration:none;
+   
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	background: rgba(0, 0, 0, .15);
+}
+
+nav ul li a:focus {
+	color: white;
+}
+
+nav ul li a:not(:only-child)::after {
+	padding-left: 4px;
+	content: ' ▾';
+}
+
+nav ul li ul li {
+	min-width: 190px;
+}
+
+nav ul li ul li a {
+	background: transparent;
+	color: #555;
+	border-bottom: 1px solid #DDE0E7;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+	background: #eee;
+	color: #111;
+}
+/* FOOTER */
+footer {
+    background-color: rgb(219, 159, 219);
+    font-size:12px;
+    margin-top:5em;
+    text-align:center;
+    float:left;
+    width: 100%; 
+}
+
+.ulfooter{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #fafafa;
+    margin-top: 10rem;
+}
+.lifooter{
+    margin-right: 10rem;
+}
+.lifooter2{
+
+}
+.estrela_footer{
+width: 10rem;
+height: 9rem;
+padding-top: -20rem;
+margin-top: -20rem;
+}
+.m-b{ font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; margin-top: 10rem; color: rgb(255, 255, 255); }
+.by   {font-size:0.96em; color: rgb(255, 255, 255); margin-top: 0.6rem;}
+.by a       { color:#fff; text-decoration:none; }
+.by a:hover { text-decoration:underline; }
+
+
+
+.icon{
+   	width: 3rem;
+    margin: 0.5rem;
+}
+.div_midiassociais{
+    margin-top: 2rem;
+    
+}
+
+.icon_instagram{
+
+}
+.icon_linkedin{
+
+}
+.icon_github{
+
+}
+.icon_whatsapp{
+	
+}
+
+/*Responsivo*/
+/* celular */
+@media screen and (max-width: 600px){
+    
+}
+
+/* Tablet */
+@media(min-width: 700px){
+
+    
+    .main_copy { margin-top: -5rem; width:100%; float:left; text-align:center; padding:1.5em 0em; height: 3rem;}
+    .main_copy p { font-size:1em; height:20px; }
+    .main_copy .m-b{ margin-top: -0.2rem;}
+    .main_copy .by   {font-size:0.9em;  margin-top: 0.4rem;}
+    
+    #imgiconi{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #imgiconf{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #imgiconw{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #icon-mail{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: -10rem;
+        margin-top: 0.5rem;
+    }  
+
+}
+@media(min-width: 1000px){
+
+    .col p{  
+        font-size:1em; 
+        height:25px; 
+    } 
+    
+    .main_copy { margin-top: -5rem; width:100%; float:left; text-align:center; padding:1.5em 0em; height: 3rem;}
+    .main_copy p { font-size:1em; height:20px; }
+    .main_copy .m-b{ margin-top: -0.2rem;}
+    .main_copy .by   {font-size:0.96em;  margin-top: 0.6rem;}
+    
+
+    
+    #imgiconi{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #imgiconf{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #imgiconw{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #icon-mail{
+        width: 2rem;
+        height: 2rem;
+        margin-left: -10.5rem;
+        margin-top: 0.5rem;
+    }  
+    
+    #e-mail{
+        margin-top: -1.5rem;
+        margin-left: 3rem;
+    }
+    
+}
