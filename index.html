@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,17 +15,37 @@
 
     <header>
         <img class="circulo" src="img/circulo-preto.png" alt=" circulo preto enfeite do site">
+        <!-- inicio botão de contraste -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-        <nav class="nav">
-            <ul>
-                <li><a href=".h1">Apresentação</a></li>
-                <li><a href="h21">Currículo</a></li>
+            <button id="btnContrast" onclick="toggleContrast()">Contraste</button>
+
+        </nav>
+        <!-- fim botão de contraste -->
+
+        <!-- menu hamburguer -->
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu_open
+        </span>
+        <menu id="itens">
+            <ul class="ul_menu">
+                <li><a href="#h10">Apresentação</a></li>
+                <li><a href="#h2curriculo">Currículo</a></li>
+            </ul>
+        </menu>
+        <!-- fim menu hamburguer -->
+
+        <nav class="nav1">
+            <ul class="ul_nav">
+                <li><a href="#h10">Apresentação</a></li>
+                <li><a href="#h2curriculo">Currículo</a></li>
             </ul>
         </nav>
-        <img class="img_estrela" src="img/star-black.png" alt="estrela preta logo do meu portfolio">
+        <a href="index.html"><img class="img_estrela" src="img/star-black.png"
+                alt="estrela preta logo do meu portfolio"></a>
         <div class="div_header">
 
-            <h1 class="h10">Olá eu sou <br> Graziele <br> <span>Amanda</span> Venâncio</h1>
+            <h1 id="h10">Olá eu sou <br> Graziele <br> <span>Amanda</span> Venâncio</h1>
             <p class="p1">Tenho 23 anos, moro em Taquaritinga-SP, atualmente estou desempregada e a procura de um
                 emprego para ajudar meus pais em casa somos em 5 pessoas, também estudo na faculdade de tecnologia
                 Fatec-Taquaritinga, lá curso sistemas para internet no turno da manhã estou no 3º semestre.
@@ -31,7 +53,7 @@
             <img class="img_espiral" src="img/espiral-removebg-preview.png"
                 alt="imagem de espiral contendo icones de tecnologia e um circulo no meio representando a programação">
             <img class="minha_foto" src="img/eu.png"
-                alt="uma imagem minha sou linda mulher preta, cabelos longos e estou usando roupa preta">
+                alt="uma imagem minha sou uma linda mulher preta, cabelos longos e estou usando roupa preta">
         </div>
     </header>
     <main>
@@ -56,8 +78,11 @@
         <!-- fim libras -->
 
         <div class="div_curriculo">
-            <h2>Meu currículo</h2>
-            <section>
+            <h2 id="h2curriculo">Meu currículo</h2>
+            <p class="pmais_sobre_mim">Um pouco mais sobre mim</p>
+            <section class="section_dados_pessoais">
+                <img class="estrelac estrela_cinza" src="img/estrela-para-currículo-removebg-preview.png"
+                    alt="enfeite estrela de 4 pontas cinza sem preenchimento">
                 <h3>Dados pessoais</h3>
                 <p>Brasileira, Solteira, 23 anos (22/02/2000)<br>
                     Rua Manoel Celestino dos Santos, 71 - Jd. Martinelli, Taquaritinga - SP, 15906-730
@@ -66,67 +91,80 @@
                     Local de nascimento: Taquaritinga
                 </p>
             </section>
-          <section>
-            <h3>educação e Formação</h3>
-            <ul>
-                <li>Ensino Médio, Normal (2015 - 2017) - Concluído E.E. 9 de Julho</li>
-                <li>Técnico, Secretáriado (Ago, 2017 - Nov, 2017) - Incompleto
-                    Etec Dr. Adail Nunes da Silva (Expansão E.E 9 de Julho)
-                </li>
-                <li> Técnico, Administração (2018 - 2019) - Concluído Etec Dr. Adail Nunes da Silva</li>
-                <li>Profissionalizante Básico , Informática (2018 - 2019) - Concluído Reviva Profissionalizante</li>
-                <li> Profissionalizante Básico , Pacote office (2019 - 2019) - Incompleto Reviva Profissionalizante</li>
-                <li>Curso Superior De Tecnologia , Sistemas para Internet (2022 - 2025) Fatec -Taquaritinga</li>
-            </ul>
-          </section>
-         
-           <section>
-            <h3>experiência profissional</h3>
-            <ul>
-                <li>Pastelaria Do Jessé, Taquaritinga - SP (2021 - 2022)
-                    Vendedora
-                    Atendende, garçonete, mexia na caixa registradora...</li>
-                <li>Etec Dr. Adail Nunes Da Silva, Taquaritinga - SP (abril de 2018 - agosto de 2018)
-                    Estagiária Não Remunerada
-                    secretaria
-                </li>
-            </ul>
-           </section>
-           <section>
-            <h3>Idiomas</h3>
-            <ul>
-                <li>Inglês: Básico, Net Brasil e C.E.l. (E.E. 9 de Julho)</li>
-            </ul>
-           </section>
-          
+            <section class="section_educacao_formacao">
+                <img class="estrelac estrela_cinza2" src="img/estrela-para-currículo-removebg-preview.png"
+                    alt="enfeite estrela de 4 pontas cinza sem preenchimento">
+                <h3>Educação e Formação</h3>
+                <ul>
+                    <li>Ensino Médio, Normal (2015 - 2017) - Concluído E.E. 9 de Julho</li>
+                    <li>Técnico, Secretáriado (Ago, 2017 - Nov, 2017) - Incompleto
+                        Etec Dr. Adail Nunes da Silva (Expansão E.E 9 de Julho)
+                    </li>
+                    <li> Técnico, Administração (2018 - 2019) - Concluído Etec Dr. Adail Nunes da Silva</li>
+                    <li>Profissionalizante Básico , Informática (2018 - 2019) - Concluído Reviva Profissionalizante</li>
+                    <li> Profissionalizante Básico , Pacote office (2019 - 2019) - Incompleto Reviva Profissionalizante
+                    </li>
+                    <li>Curso Superior De Tecnologia , Sistemas para Internet (2022 - 2025) Fatec -Taquaritinga</li>
+                </ul>
+            </section>
+
+            <section class="section_experiencia_profissional">
+                <img class="estrelac estrela_cinza3" src="img/estrela-para-currículo-removebg-preview.png"
+                    alt="enfeite estrela de 4 pontas cinza sem preenchimento">
+                <h3>experiência profissional</h3>
+                <ul>
+                    <li>Pastelaria Do Jessé, Taquaritinga - SP (2021 - 2022)
+                        Vendedora
+                        Atendende, garçonete, mexia na caixa registradora...</li>
+                    <li>Etec Dr. Adail Nunes Da Silva, Taquaritinga - SP (abril de 2018 - agosto de 2018)
+                        Estagiária Não Remunerada
+                        secretaria
+                    </li>
+                </ul>
+            </section>
+            <section class="section_idiomas">
+                <img class="estrelac estrela_cinza4" src="img/estrela-para-currículo-removebg-preview.png"
+                    alt="enfeite estrela de 4 pontas cinza sem preenchimento">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Inglês: Básico, Net Brasil e C.E.l. (E.E. 9 de Julho)</li>
+                </ul>
+            </section>
+
         </div>
         <div>
             <img class="img_pdf" src="img/PDF_file_icon.svg.png" alt="meu curiculo em pdf">
-            <a href="meu curriculo/cv_graziele_amanda_venâncio.pdf">Meu currículo em PDF</a>
+            <a class="cor_a_curriculo" href="meu curriculo/cv_graziele_amanda_venâncio.pdf">Meu currículo em PDF</a>
         </div>
 
 
     </main>
 
     <footer>
-        <ul class="ulfooter">
-            <li class="lifooter">Apresentação</li>
-            <li class="lifooter2">Currículo</li>
-        </ul>
-       <img class="estrela_footer" src="img/star-black.png" alt="estrela preta representando a logo">
+        <a href="index.html"><img class="estrela_footer" src="img/star-black.png"
+                alt="estrela preta representando a logo"></a>
+        <div class="navfooter">
+            <ul class="ulfooter">
+                <li><a class="lifooter" href="#h10">Apresentação</a></li>
+                <li><a class="lifooter2" href="#h2curriculo">Currículo</a></li>
+            </ul>
+        </div>
         <p class="m-b"> &copy;Projete seu Carinho - 2023, todos os direitos reservados.</p>
         <p class="by">Desenvolvido por: Graziele A. Venâncio.
         </p>
+
         <div class="div_midiassociais">
             <a href=""><img class="icon icon_instagram" src="img/instagram.png" alt="iconi do instagram"></a>
             <a href=""><img class="icon icon_linkedin" src="img/linkedin.png" alt="iconi do linkedin"></a>
-            <a href=""><img class="icon icon_github" src="img/github-icon-logo-png-transparent.png" alt="iconi do github"></a>
+            <a href=""><img class="icon icon_github" src="img/github-icon-logo-png-transparent.png"
+                    alt="iconi do github"></a>
             <a href=""><img class="icon icon_whatsapp" src="img/whatsapp.png" alt="iconi do whatsapp"></a>
         </div>
-           
-        
-        
+
     </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>

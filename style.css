@@ -1,29 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
 h1 {
-	font-weight: 200;
-	font-size: 2.2rem;
-	color: #222;
-	text-align: center;
+    font-weight: 200;
+    font-size: 2.2rem;
+    color: #222;
 }
 
-a{
+a {
     text-decoration: none;
-    color: plum;
 }
 
-.circulo{
+.circulo {
     width: 10rem;
     height: 5rem;
     margin-bottom: -3rem;
     margin-left: 50rem;
 }
 
-.img_estrela{
+.img_estrela {
     display: flex;
     width: 6rem;
     height: 5rem;
@@ -31,251 +30,638 @@ a{
     margin-left: 10rem;
 }
 
+#burguer {}
+
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-	background: rgb(219, 159, 219);
+    background: rgb(219, 159, 219);
     height: 5rem;
 }
 
-.img_espiral{
-	display: flex;
-	margin-top: -21rem;
-}
-
-.minha_foto{
-	display: flex;
-	margin-top: -35.4rem;
-	width: 26rem;
-	height: 35rem;
-}
-
-.h10{
-	display: block;
-	margin-left: 50rem;
-	text-align: justify;
-	padding-top: 5rem;
-}
-
-span{
-color: #DDE0E7;
-}
-
-.p1{
-	margin-left: 50rem;
-	margin-right: 10rem;
-	margin-top: 1rem;
-}
-
-.img_pdf{
-    width: 5rem;
-    height: 5rem;
-    margin-top: 2rem;
-}
-
-.div_header{
-    background-color:rgb(219, 159, 219) ;
-    height: 30rem;
-}
 nav::after {
-	display: block;
-	content: '';
-	clear: both;
+    display: block;
+    content: '';
+    clear: both;
 }
 
 nav ul {
-	list-style: none;
+    list-style: none;
     margin-top: 2rem;
 }
 
 nav ul li {
-	float: left;
-	position: relative;
+    float: left;
+    position: relative;
     margin: -1rem;
- 
+
 }
 
 nav ul li a {
-	display: block;
-	color: rgba(255, 255, 255, .9);
-	text-decoration: none;
-	padding: 1rem 2rem;
-	border-top: 2px solid transparent;
-	border-bottom: 2px solid transparent;
-	transition: all .3s ease-in-out;
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
     font-size: 0.8rem;
-    text-decoration:none;
-   
+    text-decoration: none;
+
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-	background: rgba(0, 0, 0, .15);
+    background: rgba(0, 0, 0, .15);
 }
 
 nav ul li a:focus {
-	color: white;
-}
-
-nav ul li a:not(:only-child)::after {
-	padding-left: 4px;
-	content: ' ▾';
+    color: white;
 }
 
 nav ul li ul li {
-	min-width: 190px;
+    min-width: 190px;
 }
 
 nav ul li ul li a {
-	background: transparent;
-	color: #555;
-	border-bottom: 1px solid #DDE0E7;
+    background: transparent;
+    color: #555;
+    border-bottom: 1px solid #DDE0E7;
 }
 
 nav ul li ul li a:hover,
 nav ul li ul li a:focus {
-	background: #eee;
-	color: #111;
+    background: #eee;
+    color: #111;
 }
+
+.div_header {
+    background-color: rgb(219, 159, 219);
+    height: 32rem;
+}
+
+.img_espiral {
+    display: flex;
+    margin-top: -24rem;
+}
+
+.minha_foto {
+    display: flex;
+    margin-top: -35.4rem;
+    width: 26rem;
+    height: 35rem;
+}
+
+#h10 {
+    display: block;
+    margin-left: 50rem;
+    text-align: justify;
+    padding-top: 10rem;
+}
+
+span {
+    color: #DDE0E7;
+}
+
+
+/* Currículo */
+#h2curriculo {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pmais_sobre_mim {
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.estrelac {
+    width: 3rem;
+    height: 3rem;
+}
+
+.estrela_cinza {
+    margin-left: 5rem;
+}
+
+.estrela_cinza2 {
+    margin-left: 7rem;
+}
+
+.estrela_cinza3 {
+    margin-left: 9rem;
+}
+
+.estrela_cinza4 {
+    margin-left: 2rem;
+}
+
+.section_dados_pessoais {
+    display: block;
+}
+
+.section_educacao_formacao {
+    display: block;
+}
+
+.section_experiencia_profissional {
+    display: block;
+}
+
+.section_idiomas {
+    display: block;
+}
+
+.img_pdf {
+    width: 5rem;
+    height: 5rem;
+}
+
+.cor_a_curriculo {
+    color: plum;
+}
+
 /* FOOTER */
 footer {
     background-color: rgb(219, 159, 219);
-    font-size:12px;
-    margin-top:5em;
-    text-align:center;
-    float:left;
-    width: 100%; 
+    font-size: 12px;
+    margin-top: 5em;
+    text-align: center;
+    float: left;
+    width: 100%;
 }
 
-.ulfooter{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    color: #fafafa;
+.navfooter {
     margin-top: 10rem;
 }
-.lifooter{
-    margin-right: 10rem;
+
+.ulfooter {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: -12rem;
+    margin-bottom: 3rem;
 }
-.lifooter2{
+
+.lifooter {
+    margin-right: 13rem;
+    height: 1rem;
+    color: #f9fafc;
+}
+
+.lifooter2 {
+    color: #f9fafc;
+}
+
+.estrela_footer {
+    display: flex;
+    margin-bottom: -1rem;
+    margin-left: 40rem;
+    width: 5rem;
+    height: 4rem;
 
 }
-.estrela_footer{
-width: 10rem;
-height: 9rem;
-padding-top: -20rem;
-margin-top: -20rem;
+
+.m-b {
+    font-family: 'open_sanslight';
+    font-size: 1em;
+    color: #fcfcfc;
 }
-.m-b{ font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; margin-top: 10rem; color: rgb(255, 255, 255); }
-.by   {font-size:0.96em; color: rgb(255, 255, 255); margin-top: 0.6rem;}
-.by a       { color:#fff; text-decoration:none; }
-.by a:hover { text-decoration:underline; }
 
+.by {
+    font-size: 0.96em;
+    color: rgb(255, 255, 255);
+    margin-top: 0.6rem;
+}
 
+.by a {
+    color: #fff;
+    text-decoration: none;
+}
 
-.icon{
-   	width: 3rem;
+.by a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 3rem;
     margin: 0.5rem;
 }
-.div_midiassociais{
+
+.div_midiassociais {
     margin-top: 2rem;
-    
-}
-
-.icon_instagram{
 
 }
-.icon_linkedin{
 
+/* CONTRASTE */
+#btnContrast {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
 }
-.icon_github{
 
-}
-.icon_whatsapp{
-	
+.inverted {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #000;
 }
 
+/* FIM DO CONTRASTE */
 /*Responsivo*/
 /* celular */
-@media screen and (max-width: 600px){
-    
+@media screen and (max-width: 600px) {
+
+    #btnContrast {
+        margin-top: 2rem;
+    }
+
+    header {
+        background-color: plum;
+        width: 100%;
+    }
+
+    .nav1 {
+        display: none;
+    }
+    menu{
+        display: none;
+        margin-left: 2rem;
+    }
+    .ul_menu li a{
+        color: #000;
+        display: block;
+        width: 4rem;
+        margin-top: 0.5rem;
+        bottom: 0.5rem;
+    }
+    .ul_menu li a:hover{
+        color: white;
+    }
+    .circulo {
+        display: none;
+    }
+
+    .img_estrela {
+        margin-top: -4rem;
+        margin-left: 15rem;
+    }
+
+    .img_espiral {
+        margin-top: -11rem;
+        margin-left: -3rem;
+        width: 15rem;
+        height: 15rem;
+
+    }
+
+    .minha_foto {
+        margin-left: -2rem;
+        margin-top: -15rem;
+        width: 12rem;
+        height: 15rem;
+    }
+
+    #burguer {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        color: black;
+        cursor: pointer;
+    }
+    #burguer:hover{
+        color: #fff;
+    }
+    .div_header {
+        width: 100%;
+        height: 19rem;
+    }
+
+    #h10 {
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-left: 12rem;
+        padding-top: 6rem;
+    }
+
+    .p1 {
+        display: flex;
+        font-size: 0.6rem;
+        margin-left: 12rem;
+        margin-right: 2rem;
+    }
+
+    /* CURRÍCULO */
+    #h2curriculo {
+        margin-left: 2rem;
+    }
+
+    .pmais_sobre_mim {
+        margin-left: 1rem;
+    }
+
+    .estrela_cinza2 {
+        display: none;
+    }
+
+    .estrela_cinza3 {
+        display: none;
+    }
+
+    .estrela_cinza4 {
+        display: none;
+    }
+
+    .section_dados_pessoais {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_educacao_formacao {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_experiencia_profissional {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_idiomas {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .img_pdf {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /* FIM DO CURRÍCULO */
+
+    /* footer */
+    .estrela_footer {
+        margin-left: 10rem;
+    }
+
+    /* fim footer */
 }
 
 /* Tablet */
-@media(min-width: 700px){
+@media(min-width: 900px) {
 
-    
-    .main_copy { margin-top: -5rem; width:100%; float:left; text-align:center; padding:1.5em 0em; height: 3rem;}
-    .main_copy p { font-size:1em; height:20px; }
-    .main_copy .m-b{ margin-top: -0.2rem;}
-    .main_copy .by   {font-size:0.9em;  margin-top: 0.4rem;}
-    
-    #imgiconi{
-        width: 2rem;
-        height: 2rem;
+    /* header */
+    #itens{
+        display: none;
     }
-    
-    #imgiconf{
-        width: 2rem;
+    #btnContrast {
+        width: 6rem;
         height: 2rem;
+        margin-left: -4rem;
     }
-    
-    #imgiconw{
-        width: 2rem;
-        height: 2rem;
-    }
-    
-    #icon-mail{
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-left: -10rem;
-        margin-top: 0.5rem;
-    }  
 
+    .circulo {
+        width: 7rem;
+        height: 3.5rem;
+        margin-left: 36rem;
+    }
+    .img_estrela{
+        margin-left: 2rem;
+    }
+    .ul_nav {
+        margin-left: -3rem;
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    .div_header {
+        height: 28rem;
+    }
+
+    .img_espiral {
+        margin-left: -5rem;
+        margin-top: -15.8rem;
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .minha_foto {
+        margin-left: -2rem;
+        margin-top: -25.2rem;
+        width: 18rem;
+        height: 25rem;
+    }
+
+    #h10 {
+        margin-left: 26rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .p1 {
+        margin-left: 26rem;
+        margin-right: 10rem;
+        font-size: 0.8rem;
+    }
+
+    /* currículo */
+    #h2curriculo {
+        margin-left: 1rem;
+    }
+
+    .pmais_sobre_mim {
+        margin-left: 1rem;
+    }
+
+
+    .estrela_cinza2 {
+        display: none;
+    }
+
+    .estrela_cinza3 {
+        display: none;
+    }
+
+    .estrela_cinza4 {
+        display: none;
+    }
+
+    .section_dados_pessoais {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_educacao_formacao {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_experiencia_profissional {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_idiomas {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+
+        margin-right: 1rem;
+    }
+
+    .img_pdf {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /* fim currículo */
+    /* footer */
+    .estrela_footer{
+        margin-left: 26rem;
+    }
 }
-@media(min-width: 1000px){
 
-    .col p{  
-        font-size:1em; 
-        height:25px; 
-    } 
+@media(min-width: 1000px) {
     
-    .main_copy { margin-top: -5rem; width:100%; float:left; text-align:center; padding:1.5em 0em; height: 3rem;}
-    .main_copy p { font-size:1em; height:20px; }
-    .main_copy .m-b{ margin-top: -0.2rem;}
-    .main_copy .by   {font-size:0.96em;  margin-top: 0.6rem;}
+    /* HEADER */
+    #itens{
+        display: none;
+    }
+    #burguer {
+        display: none;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
     
+    .circulo {
+        margin-bottom: -3rem;
+        margin-left: 50rem;
+    }
+    
+    .img_estrela {
+        margin-top: -5rem;
+        margin-left: 10rem;
+    }
+    .div_header{
+        height: 32rem;
+    }
+    .img_espiral {
+        margin-top: -18rem;
+        width: 36rem;
+        height: 30rem;
+    }
+    
+    .minha_foto {
+        margin-top: -35.4rem;
+        width: 26rem;
+        height: 35rem;
+    }
+    
+    #h10 {
+        padding-top: 4rem;
+        margin-left: 50rem;
+        font-size: 2.8rem;
+    }
+    .p1{
+        margin-left: 50rem;
+        margin-right: 10rem;
+        font-size: 1rem;
+    }
+    
+    /* Currículo */
+    #h2curriculo {
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+    
+    .pmais_sobre_mim {
+        margin-left: 5rem;
+    }
+    
+    .estrela_cinza {
+        margin-left: 5rem;
+    }
+    
+    .estrela_cinza2 {
+        display: flex;
+        margin-left: 14rem;
+    }
+    
+    .estrela_cinza3 {
+        display: flex;
+        margin-left: 18rem;
+    }
+    
+    .estrela_cinza4 {
+        display: flex;
+        margin-left: 14rem;
+    }
+    
+    .section_dados_pessoais {
+        margin-left: 5rem;
+        margin-right: 60rem;
+        font-size: 1rem;
+    }
 
-    
-    #imgiconi{
-        width: 2rem;
-        height: 2rem;
+    .section_educacao_formacao {
+        margin-left: 27rem;
+        margin-right: 35rem;
+        margin-top: -11rem;
     }
-    
-    #imgiconf{
-        width: 2rem;
-        height: 2rem;
+
+    .section_experiencia_profissional {
+        margin-top: -19rem;
+        margin-left: 51rem;
+        margin-right: 3rem;
     }
-    
-    #imgiconw{
-        width: 2rem;
-        height: 2rem;
+
+    .section_idiomas {
+        display: block;
+        margin-top: 2rem;
+        margin-left: 51rem;
+        margin-right: 3rem;
     }
-    
-    #icon-mail{
-        width: 2rem;
-        height: 2rem;
-        margin-left: -10.5rem;
-        margin-top: 0.5rem;
-    }  
-    
-    #e-mail{
-        margin-top: -1.5rem;
-        margin-left: 3rem;
+
+    .img_pdf {
+        margin-top: 2rem;
+        margin-left: 5rem;
     }
-    
+    /* fim currículo */
+      /* FOOTER */
+    .estrela_footer {
+        margin-left: 40rem;
+    }
 }
