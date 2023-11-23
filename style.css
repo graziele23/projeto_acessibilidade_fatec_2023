@@ -568,7 +568,7 @@ footer {
     
     .circulo {
         margin-bottom: -3rem;
-        margin-left: 50rem;
+        margin-left: 65rem;
     }
     
     .img_estrela {
@@ -579,7 +579,7 @@ footer {
         height: 32rem;
     }
     .img_espiral {
-        margin-top: -18rem;
+        margin-top: -14.4rem;
         width: 36rem;
         height: 30rem;
     }
@@ -631,6 +631,7 @@ footer {
     }
     
     .section_dados_pessoais {
+        margin-top: 5rem;
         margin-left: 5rem;
         margin-right: 60rem;
         font-size: 1rem;
@@ -662,6 +663,6 @@ footer {
     /* fim currículo */
       /* FOOTER */
     .estrela_footer {
-        margin-left: 40rem;
+        margin-left: 58rem;
     }
 }
