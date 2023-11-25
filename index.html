@@ -16,38 +16,36 @@
     <header>
         <img class="circulo" src="img/circulo-preto.png" alt=" circulo preto enfeite do site">
         <!-- inicio botão de contraste -->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="text navbar-expand-sm bg-dark navbar-dark">
 
             <button id="btnContrast" onclick="toggleContrast()">Contraste</button>
-
+            <!-- fim botão de contraste -->
+            <!-- menu hamburguer -->
+            <span id="burguer" class="text material-symbols-outlined" onclick="clickMenu()">
+                menu_open
+            </span>
+            <menu id="itens">
+                <ul class=" ul_menu">
+                    <li><a class="text" href="#h10">Apresentação</a></li>
+                    <li><a class="text" href="#h2curriculo">Currículo</a></li>
+                </ul>
+            </menu>
+            <!-- fim menu hamburguer -->
         </nav>
-        <!-- fim botão de contraste -->
-
-        <!-- menu hamburguer -->
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-            menu_open
-        </span>
-        <menu id="itens">
-            <ul class="ul_menu">
-                <li><a href="#h10">Apresentação</a></li>
-                <li><a href="#h2curriculo">Currículo</a></li>
-            </ul>
-        </menu>
-        <!-- fim menu hamburguer -->
 
         <nav class="nav1">
             <ul class="ul_nav">
-                <li><a href="#h10">Apresentação</a></li>
-                <li><a href="#h2curriculo">Currículo</a></li>
+                <li><a class="text" href="#h10">Apresentação</a></li>
+                <li><a class="text" href="#h2curriculo">Currículo</a></li>
             </ul>
         </nav>
 
-        <a href="index.html"><img class="img_estrela" src="img/star-black.png"
+        <a href="index.html"><img class="text img_estrela" src="img/star-black.png"
                 alt="estrela preta logo do meu portfolio"></a>
         <div class="div_header">
 
             <h1 id="h10">Olá eu sou <br> Graziele <br> <span>Amanda</span> Venâncio</h1>
-            <p class="p1">Tenho 23 anos, moro em Taquaritinga-SP, atualmente estou desempregada e a procura de um
+            <p class="text p1">Tenho 23 anos, moro em Taquaritinga-SP, atualmente estou desempregada e a procura de um
                 emprego para ajudar meus pais em casa somos em 5 pessoas, também estudo na faculdade de tecnologia
                 Fatec-Taquaritinga, lá curso sistemas para internet no turno da manhã estou no 3º semestre.
             </p>
@@ -56,18 +54,14 @@
             <img class="minha_foto" src="img/eu.png"
                 alt="uma imagem minha sou uma linda mulher preta, cabelos longos e estou usando roupa preta">
         </div>
-        <button id="increaseFontBtn">+</button>
-        <button id="decreaseFontBtn">-</button>
-        <div id="content">
-            <p class="adjustable-text">Este é um exemplo de texto.</p>
-            <p class="adjustable-text">Este é um exemplo de texto 2.</p>
-
-        </div>
-        <p class="adjustable-text">Este é um exemplo de texto 3.</p>
-        <p class="teste">Mais teste</p>
 
     </header>
     <main>
+        <!-- botões zoom -->
+        <button id="increaseBtn" class="botoes_mais_menos">aumenta</button>
+        <button id="decreaseBtn" class="botoes_mais_menos">diminui</button>
+        <!-- fim botões zoom -->
+
         <!-- LIBRAS-->
 
         <div vw class="enabled">
@@ -89,9 +83,9 @@
         <!-- fim libras -->
 
         <div class="div_curriculo">
-            <h2 id="h2curriculo">Meu currículo</h2>
-            <p class="pmais_sobre_mim">Um pouco mais sobre mim</p>
-            <section class="section_dados_pessoais">
+            <h2 id="h2curriculo" class="text">Meu currículo</h2>
+            <p class="text pmais_sobre_mim">Um pouco mais sobre mim</p>
+            <section class="text section_dados_pessoais">
                 <img class="estrelac estrela_cinza" src="img/estrela-para-currículo-removebg-preview.png"
                     alt="enfeite estrela de 4 pontas cinza sem preenchimento">
                 <h3>Dados pessoais</h3>
@@ -102,7 +96,7 @@
                     Local de nascimento: Taquaritinga
                 </p>
             </section>
-            <section class="section_educacao_formacao">
+            <section class="text section_educacao_formacao">
                 <img class="estrelac estrela_cinza2" src="img/estrela-para-currículo-removebg-preview.png"
                     alt="enfeite estrela de 4 pontas cinza sem preenchimento">
                 <h3>Educação e Formação</h3>
@@ -119,7 +113,7 @@
                 </ul>
             </section>
 
-            <section class="section_experiencia_profissional">
+            <section class="text section_experiencia_profissional">
                 <img class="estrelac estrela_cinza3" src="img/estrela-para-currículo-removebg-preview.png"
                     alt="enfeite estrela de 4 pontas cinza sem preenchimento">
                 <h3>experiência profissional</h3>
@@ -133,7 +127,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section_idiomas">
+            <section class="text section_idiomas">
                 <img class="estrelac estrela_cinza4" src="img/estrela-para-currículo-removebg-preview.png"
                     alt="enfeite estrela de 4 pontas cinza sem preenchimento">
                 <h3>Idiomas</h3>
@@ -145,7 +139,8 @@
         </div>
         <div>
             <img class="img_pdf" src="img/PDF_file_icon.svg.png" alt="meu curiculo em pdf">
-            <a class="cor_a_curriculo" href="meu curriculo/cv_graziele_amanda_venâncio.pdf">Meu currículo em PDF</a>
+            <a class="text cor_a_curriculo" href="meu curriculo/cv_graziele_amanda_venâncio.pdf">Meu currículo em
+                PDF</a>
         </div>
 
 
@@ -156,12 +151,12 @@
                 alt="estrela preta representando a logo"></a>
         <div class="navfooter">
             <ul class="ulfooter">
-                <li><a class="lifooter" href="#h10">Apresentação</a></li>
-                <li><a class="lifooter2" href="#h2curriculo">Currículo</a></li>
+                <li><a class="text lifooter" href="#h10">Apresentação</a></li>
+                <li><a class="text lifooter2" href="#h2curriculo">Currículo</a></li>
             </ul>
         </div>
-        <p class="m-b"> &copy;Projete seu Carinho - 2023, todos os direitos reservados.</p>
-        <p class="by">Desenvolvido por: Graziele A. Venâncio.
+        <p class="text m-b"> &copy;Projete seu Carinho - 2023, todos os direitos reservados.</p>
+        <p class="text by">Desenvolvido por: Graziele A. Venâncio.
         </p>
 
         <div class="div_midiassociais">
@@ -172,7 +167,7 @@
             <a href="https://github.com/graziele23"><img class="icon icon_github"
                     src="img/github-icon-logo-png-transparent.png" alt="iconi do github"></a>
             <img class="icon icon_whatsapp" src="img/whatsapp.png" alt="iconi do whatsapp">
-            <span id="celular">(16)98161-5157</span>
+            <span id="celular" class="text">(16)98161-5157</span>
         </div>
 
     </footer>

@@ -15,6 +15,44 @@ a {
     text-decoration: none;
 }
 
+/* CONTRASTE */
+#btnContrast {
+    padding: 10px 20px;
+    height: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.inverted {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #000;
+}
+
+/* FIM DO CONTRASTE */
+#burguer {
+    color: #000;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.ul_menu {
+    display: none;
+}
+
+#burguer:hover {
+    color: #fff;
+}
+
+.ul_nav {
+    display: none;
+}
+
 .circulo {
     width: 10rem;
     height: 5rem;
@@ -27,10 +65,8 @@ a {
     width: 6rem;
     height: 5rem;
     margin-top: -5rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
 }
-
-#burguer {}
 
 nav {
     display: flex;
@@ -90,12 +126,6 @@ nav ul li ul li a {
     border-bottom: 1px solid #DDE0E7;
 }
 
-nav ul li ul li a:hover,
-nav ul li ul li a:focus {
-    background: #eee;
-    color: #111;
-}
-
 .div_header {
     background-color: rgb(219, 159, 219);
     height: 32rem;
@@ -124,7 +154,14 @@ span {
     color: #DDE0E7;
 }
 
+/* zoom */
+.botoes_mais_menos {
+    background-color: #000;
+    color: #fff;
+    width: 4rem;
+}
 
+/* fim zoom */
 /* Currículo */
 #h2curriculo {
     margin-left: 5rem;
@@ -255,26 +292,10 @@ footer {
 
 }
 
-/* CONTRASTE */
-#btnContrast {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-}
 
-.inverted {
-    filter: invert(1) hue-rotate(180deg);
-    background-color: #000;
-}
-
-/* FIM DO CONTRASTE */
 /*Responsivo*/
 /* celular */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 
     #btnContrast {
         margin-top: 2rem;
@@ -312,11 +333,11 @@ footer {
 
     .img_estrela {
         margin-top: -4rem;
-        margin-left: 15rem;
+        margin-left: 10rem;
     }
 
     .img_espiral {
-        margin-top: -11rem;
+        margin-top: -6.rem;
         margin-left: -3rem;
         width: 15rem;
         height: 15rem;
@@ -331,15 +352,7 @@ footer {
     }
 
     #burguer {
-        margin-left: 2rem;
-        margin-top: 2rem;
-        font-size: 2.5rem;
-        color: black;
-        cursor: pointer;
-    }
-
-    #burguer:hover {
-        color: #fff;
+        display: none;
     }
 
     .div_header {
@@ -448,6 +461,7 @@ footer {
     }
 
     .circulo {
+        display: block;
         width: 7rem;
         height: 3.5rem;
         margin-left: 36rem;
@@ -494,6 +508,11 @@ footer {
         margin-right: 10rem;
         font-size: 0.8rem;
     }
+
+    /* zoom */
+    .botoes_mais_menos {}
+
+    /* fim zoom */
 
     /* currículo */
     #h2curriculo {
@@ -563,10 +582,6 @@ footer {
 }
 
 @media(min-width: 1000px) {
-    main {
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
 
     /* HEADER */
     #itens {
@@ -583,7 +598,7 @@ footer {
 
     .circulo {
         margin-bottom: -3rem;
-        margin-left: 65rem;
+        margin-left: 50rem;
     }
 
     .img_estrela {
@@ -596,7 +611,7 @@ footer {
     }
 
     .img_espiral {
-        margin-top: -14.4rem;
+        margin-top: -18rem;
         width: 36rem;
         height: 30rem;
     }
@@ -619,26 +634,14 @@ footer {
         font-size: 1rem;
     }
 
-    /* zoom */
-    #content {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .adjustable-text {
-        font-size: 16px;
-    }
-    /* fim zoom */
-
     /* Currículo */
     #h2curriculo {
-        margin-left: 2rem;
+        margin-left: 5rem;
         margin-top: 2rem;
     }
 
     .pmais_sobre_mim {
-        margin-left: 1.5rem;
+        margin-left: 5rem;
     }
 
     .estrela_cinza {
@@ -647,7 +650,7 @@ footer {
 
     .estrela_cinza2 {
         display: flex;
-        margin-left: 16rem;
+        margin-left: 14rem;
     }
 
     .estrela_cinza3 {
@@ -657,31 +660,31 @@ footer {
 
     .estrela_cinza4 {
         display: flex;
-        margin-left: 16rem;
+        margin-left: 14rem;
     }
 
     .section_dados_pessoais {
-        margin-top: 1rem;
         margin-left: 5rem;
-        margin-right: 66rem;
+        margin-right: 60rem;
         font-size: 1rem;
     }
 
     .section_educacao_formacao {
-        margin-left: 30rem;
-        margin-right: 37rem;
-        margin-top: -12.2rem;
+        margin-left: 27rem;
+        margin-right: 35rem;
+        margin-top: -11rem;
     }
 
     .section_experiencia_profissional {
-        margin-top: -16rem;
-        margin-left: 60rem;
-        margin-right: 4rem;
+        margin-top: -19rem;
+        margin-left: 51rem;
+        margin-right: 3rem;
     }
 
     .section_idiomas {
+        display: block;
         margin-top: 2rem;
-        margin-left: 60rem;
+        margin-left: 51rem;
         margin-right: 3rem;
     }
 
@@ -693,16 +696,6 @@ footer {
     /* fim currículo */
     /* FOOTER */
     .estrela_footer {
-        margin-left: 56rem;
-    }
-
-    .div_midiassociais {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #celular {
-        margin-bottom: 0.5rem;
+        margin-left: 40rem;
     }
 }
